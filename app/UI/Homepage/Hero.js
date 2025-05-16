@@ -165,7 +165,9 @@ export default function Hero() {
           >
             <h1 className="text-2xl md:text-4xl xl:text-5xl font-extrabold text-center flex justify-center items-center">
               Dom Relaks
-              <span className="ml-3 font-light italic">"Na Wzgórzu"</span>
+              <span className="ml-3 font-light italic">
+                &quot;Na Wzgórzu&quot;
+              </span>
             </h1>
             <span className="text-center text-xl md:text-3xl mt-10 font-semibold">
               Relaks i wypoczynek w miejscowości uzdrowiskowej Muszyna
