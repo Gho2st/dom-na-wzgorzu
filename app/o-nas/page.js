@@ -1,20 +1,19 @@
-import Card from "./UI/Card";
-import About from "./UI/Homepage/About";
-import Hero from "./UI/Homepage/Hero";
-import Offer from "./UI/Homepage/Offer";
+import Card from "../UI/Card";
+import LineHeader from "../UI/LineHeader";
+import Map from "../UI/Map";
+
 
 export const metadata = {
-  title:
-    "Dom Relaksu „Na Wzgórzu” – Odpoczynek, Relaks i Wypoczynek w Muszynie",
+  title: "O Nas – Poznaj Dom Relaksu „Na Wzgórzu” ",
   alternates: {
-    canonical: "/",
+    canonical: "/o-nas",
   },
 
   description:
-    "Zrelaksuj się w Domu Relaksu „Na Wzgórzu” - piękne widoki i wyjątkowa atmosfera. Idealne miejsce na wypoczynek wśród malowniczej Muszynie!",
+    "Dowiedz się więcej o Domu Relaksu „Na Wzgórzu”. Tworzymy miejsce, do którego chce się wracać.",
 };
 
-export default function Home() {
+export default function Onas() {
   const cardData = [
     {
       title: "Basen",
@@ -38,10 +37,19 @@ export default function Home() {
     },
   ];
   return (
-    <>
-      <Hero />
-      <About />
-      <section className="px-6 flex flex-col items-center justify-center">
+    <main className="mt-26">
+      <section className="text-center px-6 py-20 max-w-6xl mx-auto">
+        <LineHeader text="O Nas" />
+        <p className="text-2xl mt-20 mb-20">
+          <span className="font-bold">
+            Dom Relaksu{" "}
+            <span className="italic font-bold"> &quot;Na Wzgórzu&quot;</span> w
+            Muszynie{" "}
+          </span>
+          to idealne miejsce na wypoczynek w uzdrowiskowej scenerii. Oferujemy
+          wyjątkowe atrakcje, które zapewnią relaks i regenerację w ciszy i
+          spokoju. Nasz obiekt wyróżnia wysoki standard oraz bogata oferta:
+        </p>
         {cardData.map((item, index) => (
           <Card
             key={item.title}
@@ -52,7 +60,7 @@ export default function Home() {
           />
         ))}
       </section>
-      <Offer />
-    </>
+      <Map />
+    </main>
   );
 }
