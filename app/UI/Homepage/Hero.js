@@ -158,7 +158,7 @@ export default function Hero() {
           onMouseLeave={() => setIsPaused(false)}
         >
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-extrabold text-center mt-2 md:mt-0 mb-10">
-            Dom Relaks
+            Dom Relaksu
             <span className="block md:inline font-light italic ml-1.5 md:ml-3">
               &quot;Na Wzgórzu&quot;
             </span>
