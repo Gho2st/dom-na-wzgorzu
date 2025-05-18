@@ -153,17 +153,18 @@ export default function Hero() {
       {/* Content */}
       <div className="flex flex-col items-center gap-4 z-10">
         <div
-          className="bg-black/60 inline-flex text-white flex-col rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
+          className="bg-black/60 text-center  text-white rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-extrabold text-center flex justify-center items-center">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-extrabold text-center mt-2 md:mt-0 mb-10">
             Dom Relaks
-            <span className="ml-1.5 md:ml-3 font-light italic">
+            <span className="block md:inline font-light italic ml-1.5 md:ml-3">
               &quot;Na Wzgórzu&quot;
             </span>
           </h1>
-          <span className="text-center text-xl md:text-3xl mt-10 font-semibold">
+
+          <span className="text-center text-xl md:text-3xl font-semibold">
             Relaks i wypoczynek w miejscowości uzdrowiskowej Muszyna
           </span>
           <HeroButton />
