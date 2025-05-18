@@ -152,29 +152,22 @@ export default function Hero() {
 
       {/* Content */}
       <div className="flex flex-col items-center gap-4 z-10">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            className="bg-black/60 inline-flex text-white flex-col rounded-xl shadow-2xl p-10 max-w-[90vw] md:max-w-3xl"
-            variants={contentVariants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            <h1 className="text-2xl md:text-4xl xl:text-5xl font-extrabold text-center flex justify-center items-center">
-              Dom Relaks
-              <span className="ml-3 font-light italic">
-                &quot;Na Wzgórzu&quot;
-              </span>
-            </h1>
-            <span className="text-center text-xl md:text-3xl mt-10 font-semibold">
-              Relaks i wypoczynek w miejscowości uzdrowiskowej Muszyna
+        <div
+          className="bg-black/60 inline-flex text-white flex-col rounded-xl shadow-2xl p-10 max-w-[90vw] md:max-w-3xl"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <h1 className="text-2xl md:text-4xl xl:text-5xl font-extrabold text-center flex justify-center items-center">
+            Dom Relaks
+            <span className="ml-3 font-light italic">
+              &quot;Na Wzgórzu&quot;
             </span>
-            <HeroButton />
-          </motion.div>
-        </AnimatePresence>
+          </h1>
+          <span className="text-center text-xl md:text-3xl mt-10 font-semibold">
+            Relaks i wypoczynek w miejscowości uzdrowiskowej Muszyna
+          </span>
+          <HeroButton />
+        </div>
 
         {/* Mobile arrows (below) */}
         <div className="flex md:hidden items-center gap-8 mt-8">

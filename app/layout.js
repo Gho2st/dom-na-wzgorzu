@@ -4,19 +4,17 @@ import Nav from "./UI/Nav";
 import Footer from "./UI/Footer";
 
 export const metadata = {
-  alternates: {
-    canonical: "https://www.barbarapiekos.pl/",
-  },
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
     type: "website",
-    url: "https://www.barbarapiekos.pl/",
-    title: "Barbara Piękoś – Oficjalne Portfolio Artystyczne",
+    url: "https://muszyna-domnawzgorzu.pl/",
+    title:
+      "Dom Relaksu „Na Wzgórzu” – Odpoczynek, Relaks i Wypoczynek w Muszynie",
     description:
-      "Zapraszam do świata malarstwa i sztuki Barbary Piękoś. Zobacz wybrane prace, poznaj biografię artystki i jej dotychczasowe wystawy. Skontaktuj się i odkryj więcej o jej artystycznej podróży.",
+      "Zrelaksuj się w Domu Relaksu „Na Wzgórzu” - piękne widoki i wyjątkowa atmosfera. Idealne miejsce na wypoczynek wśród malowniczej Muszynie!",
     images: "/opengraph-image.png",
   },
 };

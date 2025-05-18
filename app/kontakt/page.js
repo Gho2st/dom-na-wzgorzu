@@ -8,7 +8,8 @@ export const metadata = {
     canonical: "/kontakt",
   },
 
-  description: "Skontaktuj się z nami - Dom Relaksu „Na Wzgórzu” w Muszynie. Dane kontaktowe, formularz oraz dojazd w jednym miejscu.",
+  description:
+    "Skontaktuj się z nami - Dom Relaksu „Na Wzgórzu” w Muszynie. Dane kontaktowe, formularz oraz dojazd w jednym miejscu.",
 };
 export default function Kontakt() {
   return (

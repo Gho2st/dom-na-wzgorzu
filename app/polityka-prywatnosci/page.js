@@ -1,5 +1,13 @@
-import Image from "next/image";
 import LineHeader from "../UI/LineHeader";
+
+export const metadata = {
+  title: "Polityka Prywatności – muszyna-domnawzgorzu.pl",
+  alternates: {
+    canonical: "/polityka-prywatnosci",
+  },
+  description:
+    "Zapoznaj się z zasadami przetwarzania danych osobowych i polityką cookies na stronie muszyna-domnawzgorzu.pl. Dowiedz się, jakie prawa Ci przysługują zgodnie z RODO.",
+};
 
 export default function Polityka() {
   return (

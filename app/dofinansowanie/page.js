@@ -1,6 +1,15 @@
 import Image from "next/image";
 import LineHeader from "../UI/LineHeader";
 
+export const metadata = {
+  title: "Dofinansowanie – Dom Relaksu Na Wzgórzu | Muszyna",
+  alternates: {
+    canonical: "/dofinansowanie",
+  },
+  description:
+    "Projekt Dom Relaksu „Na Wzgórzu” w Muszynie współfinansowany z funduszy UE – rozwój infrastruktury turystycznej i rekreacyjnej w ramach RPO Małopolska 2014–2020.",
+};
+
 export default function Dofinansowanie() {
   return (
     <main className="mt-26">
