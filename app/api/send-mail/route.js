@@ -35,7 +35,7 @@ function createEmailTemplate({ text, fullName, email }) {
 
 // Funkcja weryfikująca token reCAPTCHA
 async function verifyRecaptcha(token) {
-  const secret = process.env.RECAPTCHA_SECRET_KEY; // Secret Key reCAPTCHA
+  const secret = process.env.RECAPTCHA_SECRET_KEY; // Secret Key reCAPTCHA... 
   const response = await fetch(
     `https://www.google.com/recaptcha/api/siteverify`,
     {
