@@ -91,8 +91,8 @@ export default function Form() {
         <div className="">
           {formSubmitted ? (
             <div className="mt-10 lg:mt-20 ">
-              <span className="text-2xl ">t</span>
-              <p className="font-light text-lg mt-6 ">dsadsa</p>
+              <span className="text-2xl ">Dziękujemy za przesłanie formularza kontaktowego.</span>
+              <p className="font-light text-lg mt-6 ">Postaramy się odpowiedzieć jak najszybciej.</p>
             </div>
           ) : (
             <form onSubmit={sendMail} className="mt-10">
