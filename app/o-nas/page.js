@@ -18,22 +18,22 @@ export default function Onas() {
     {
       title: "Basen",
       text: "Strefa basenowa to idealne miejsce na relaks. Szczególnie dedykowany rodzinom z dziećmi.",
-      imageSrc: "/basen/basen.jpg",
+      imageSrc: "/basen/basen.webp",
     },
     {
       title: "Grota Solna",
       text: "Pozytywnie oddziałuje m.in. na układ oddechowy, a dzięki właściwościom soli i mikroklimatowi wzmacnia organizm. Regularne Seanse w Grocie Solnej w naturalny sposób wzmacniają odporność, poprawiają kondycję, podnoszą koncentrację oraz wspomagają leczenie wielu schorzeń.",
-      imageSrc: "/grota-solna/grota-solna.jpg",
+      imageSrc: "/grota-solna/grota-solna.webp",
     },
     {
       title: "Sauna",
       text: "Idealne miejsce na relaks i redukcję stresu. Korzystanie z sauny poprawia funkcjonowanie organizmu - obniża napięcie, zwiększa wydolność, usprawnia przemianę materii i wspiera odporność.",
-      imageSrc: "/sauna/sauna.jpg",
+      imageSrc: "/sauna/sauna.webp",
     },
     {
       title: "Siłownia / SPA",
       text: "Obiekt posiada znakomicie wyposażoną w profesjonalny sprzęt do ćwiczeń siłownię, w której znajdują się urządzenia pozwalające rzeźbić poszczególne partie mięśniowe. Strefa spa umożliwia korzystanie z kolagenowej lampy „Słoneczna łąka”, która stymuluje tworzenie kolagenu, a tym samym proces regeneracji skóry dzięki korzystnym promieniom cieplnym. Skóra wygląda na gładszą i jędrniejszą.",
-      imageSrc: "/silownia/silownia.jpeg",
+      imageSrc: "/silownia/silownia.webp",
     },
   ];
   return (

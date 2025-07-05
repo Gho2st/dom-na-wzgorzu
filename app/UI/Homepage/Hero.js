@@ -15,19 +15,19 @@ export default function Hero() {
   const slides = useMemo(
     () => [
       {
-        background: "/baner.jpg",
+        background: "/baner.webp",
       },
       {
-        background: "/basen/basen.jpg",
+        background: "/basen/basen.webp",
       },
       {
-        background: "/grota-solna/grota-solna.jpg",
+        background: "/grota-solna/grota-solna.webp",
       },
       {
-        background: "/silownia/silownia.jpeg",
+        background: "/silownia/silownia.webp",
       },
       {
-        background: "/sauna/sauna.jpg",
+        background: "/sauna/sauna.webp",
       },
     ],
     []
@@ -35,7 +35,12 @@ export default function Hero() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setHasMounted(true); // potrzebne do animacji po 1. razie
+  }, []);
 
   useEffect(() => {
     slides.forEach((slide) => {
@@ -62,32 +67,18 @@ export default function Hero() {
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
-  // Subtle background fade transition
   const backgroundTransition = {
     initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { duration: 1.2, ease: "easeInOut" } },
-    exit: { opacity: 0, transition: { duration: 1.2, ease: "easeInOut" } },
-  };
-
-  // Subtle content animation with minimal movement
-  const contentVariants = {
-    initial: { opacity: 0, y: 20 },
     animate: {
       opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
     exit: {
       opacity: 0,
-      y: -20,
-      transition: { duration: 0.6, ease: "easeIn" },
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
   };
 
-  // Subtle arrow animations
   const arrowVariants = {
     initial: { scale: 1, opacity: 0.8 },
     hover: {
@@ -98,7 +89,6 @@ export default function Hero() {
     tap: { scale: 0.95, opacity: 0.9, transition: { duration: 0.2 } },
   };
 
-  // Subtle social media icon animations
   const socialVariants = {
     initial: { opacity: 0, y: 20 },
     animate: {
@@ -110,24 +100,24 @@ export default function Hero() {
 
   return (
     <section className="flex justify-center items-center min-h-screen overflow-hidden relative">
-      {/* Background */}
+      {/* Tło z animacją */}
       <AnimatePresence>
         <motion.div
           key={slides[currentSlide].background}
           className="absolute inset-0 z-0"
           variants={backgroundTransition}
-          initial="initial"
+          initial={hasMounted ? "initial" : false}
           animate="animate"
           exit="exit"
           style={{
-            backgroundImage: `url(${slides[currentSlide].background})`,
+            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(${slides[currentSlide].background})`,
             backgroundSize: "cover",
-            backgroundPosition: "top",
+            backgroundPosition: "center",
           }}
         />
       </AnimatePresence>
 
-      {/* Desktop arrows (on sides) */}
+      {/* Strzałki desktop */}
       <motion.button
         onClick={prevSlide}
         className="hidden md:flex text-yellow-600 bg-white/70 rounded-2xl text-4xl p-2 cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 z-10"
@@ -135,6 +125,7 @@ export default function Hero() {
         initial="initial"
         whileHover="hover"
         whileTap="tap"
+        aria-label="Poprzedni slajd"
       >
         <FaArrowLeft />
       </motion.button>
@@ -146,14 +137,15 @@ export default function Hero() {
         initial="initial"
         whileHover="hover"
         whileTap="tap"
+        aria-label="Następny slajd"
       >
         <FaArrowRight />
       </motion.button>
 
-      {/* Content */}
+      {/* Treść */}
       <div className="flex flex-col items-center gap-4 z-10">
         <div
-          className="bg-black/60 text-center  text-white rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
+          className="bg-black/60 text-center text-white rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -170,7 +162,7 @@ export default function Hero() {
           <HeroButton />
         </div>
 
-        {/* Mobile arrows (below) */}
+        {/* Strzałki mobilne */}
         <div className="flex md:hidden items-center gap-8 mt-8">
           <motion.button
             onClick={prevSlide}
@@ -195,7 +187,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Social media icons */}
+      {/* Ikony social media */}
       <motion.div
         className="absolute text-3xl md:text-4xl bottom-0 left-0 flex gap-6 p-3 text-white bg-black/50 z-10"
         variants={socialVariants}

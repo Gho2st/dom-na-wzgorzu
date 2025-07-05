@@ -23,7 +23,7 @@ export default function Dofinansowanie() {
         <div className="flex justify-center items-center">
           <div className="w-1/3">
             <Image
-              src={"/dofinansowanie/1.png"}
+              src={"/dofinansowanie/1.webp"}
               width={500}
               height={500}
               layout="responsive"
@@ -32,7 +32,7 @@ export default function Dofinansowanie() {
           </div>
           <div className="w-1/3">
             <Image
-              src={"/dofinansowanie/2.png"}
+              src={"/dofinansowanie/2.webp"}
               width={500}
               height={500}
               layout="responsive"
@@ -41,7 +41,7 @@ export default function Dofinansowanie() {
           </div>
           <div className="w-1/3">
             <Image
-              src={"/dofinansowanie/3.png"}
+              src={"/dofinansowanie/3.webp"}
               width={500}
               height={500}
               layout="responsive"

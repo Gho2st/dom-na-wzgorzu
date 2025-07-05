@@ -64,7 +64,7 @@ export default function Nav() {
         <div className="flex items-center">
           <Link href="/" className="relative h-24 w-24 cursor-pointer">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               fill
               alt="Dom Relaks na Wzgórzu logo"
               className="object-contain"

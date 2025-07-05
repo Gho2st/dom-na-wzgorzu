@@ -75,10 +75,10 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="flex justify-center  w-1/2 sm:w-1/3  xl:w-3/5 2xl:w-2/5 mx-auto">
+            <div className="flex justify-center  w-1/2 sm:w-1/3  xl:w-2/5 2xl:w-2/5 mx-auto">
               <Image
                 alt="logo"
-                src={"/logo.png"}
+                src={"/logo.webp"}
                 width={330}
                 height={330}
                 layout="responsive"

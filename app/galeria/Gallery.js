@@ -6,33 +6,33 @@ export default function Gallery() {
   const galleryData = {
     Sauna: [
       {
-        src: "/sauna/sauna.jpg",
+        src: "/sauna/sauna.webp",
         alt: "Sauna - wnętrze z drewnem i światłem",
       },
     ],
     "Siłownia i SPA": [
       {
-        src: "/silownia/silownia.jpeg",
+        src: "/silownia/silownia.webp",
         alt: "Siłownia z profesjonalnym sprzętem",
       },
       {
-        src: "/silownia/silownia2.jpeg",
+        src: "/silownia/silownia2.webp",
         alt: "Kolejna strefa siłowni z nowoczesnym wyposażeniem",
       },
       {
-        src: "/silownia/silownia3.jpeg",
+        src: "/silownia/silownia3.webp",
         alt: "Strefa relaksu w SPA",
       },
     ],
     "Grota Solna": [
       {
-        src: "/grota-solna/grota-solna.jpg",
+        src: "/grota-solna/grota-solna.webp",
         alt: "Grota solna z klimatycznym oświetleniem",
       },
     ],
     Basen: [
       {
-        src: "/basen/basen.jpg",
+        src: "/basen/basen.webp",
         alt: "Basen z widokiem na zewnątrz",
       },
     ],
