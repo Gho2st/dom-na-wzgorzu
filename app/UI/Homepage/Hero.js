@@ -110,7 +110,7 @@ export default function Hero() {
           animate="animate"
           exit="exit"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(${slides[currentSlide].background})`,
+            backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${slides[currentSlide].background})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -145,7 +145,7 @@ export default function Hero() {
       {/* Treść */}
       <div className="flex flex-col items-center gap-4 z-10">
         <div
-          className="bg-black/60 text-center text-white rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
+          className="bg-black/50 text-center text-white rounded-xl shadow-2xl p-6 md:p-10 max-w-[90vw] md:max-w-3xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
