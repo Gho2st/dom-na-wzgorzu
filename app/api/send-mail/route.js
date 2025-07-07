@@ -96,7 +96,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
-      to: "domiweb.biuro@gmail.com",
+      to: "domnawzgorzu@m-decor.eu",
       replyTo: email, // Adres e-mail klienta podany w formularzu
       subject: "Email ze strony Dom Relaks Na Wzgórzu od klienta",
       html: createEmailTemplate(fields),
