@@ -11,7 +11,6 @@ import Link from "next/link";
 import Cta from "./Homepage/Cta";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
   const [showArrow, setShowArrow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -125,11 +124,19 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-24 text-center">
+        <div className="mt-12 text-center">
+          <Link href="/dofinansowanie" className="flex justify-center mb-10 cursor-pointer">
+            <Image
+              src={"/unia.webp"}
+              width={120}
+              height={120}
+              className="rounded-xl"
+              alt="Logo - Unia Europejska"
+            />
+          </Link>
           <p className="text-xl">
-            Dom Relaksu{" "}
-            <span className="italic font-light"> &quot;Na Wzgórzu&quot; </span>{" "}
-            Muszyna | {currentYear}
+            © Dom Relaksu{" "}
+            <span className="italic font-light"> &quot;Na Wzgórzu&quot; </span>
           </p>
         </div>
         {showArrow && (

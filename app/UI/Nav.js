@@ -72,14 +72,14 @@ export default function Nav() {
               priority
             />
           </Link>
-          <div className="hidden xl:block relative h-12 w-24 ml-8">
+          <Link href={'/dofinansowanie'} className="hidden xl:block relative h-12 w-24 ml-8 cursor-pointer">
             <Image
               src="/unia.webp"
               fill
               alt="Unia europejska logo"
               className="object-contain"
             />
-          </div>
+          </Link>
         </div>
 
         {/* Prawa strona: Hamburger */}
