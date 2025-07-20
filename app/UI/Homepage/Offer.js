@@ -14,7 +14,7 @@ export default function Offer() {
         Odkryj, co oferujemy - relaks, wygoda i piękne widoki
       </h2>
 
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-24 max-w-5xl mx-auto text-left">
+      <ul className="grid grid-cols-2  gap-y-8 gap-x-4 md:gap-x-24 max-w-5xl mx-auto text-left">
         <OfferItem icon={<FaLeaf />} text="Malownicze okolice" />
         <OfferItem icon={<FaSwimmingPool />} text="Kryty basen" />
         <OfferItem icon={<FaParking />} text="Bezpłatny parking" />
@@ -28,7 +28,7 @@ export default function Offer() {
 
 function OfferItem({ icon, text }) {
   return (
-    <li className="flex border-2 items-center justify-center py-4 lg:py-6 flex-row-reverse text-2xl shadow-xl rounded-xl gap-8">
+    <li className="flex border-2 items-center justify-center p-2 md:py-4 lg:py-6 flex-row-reverse text-xl md:text-2xl shadow-xl rounded-xl gap-2 md:gap-8">
       <span className="text-2xl lg:text-4xl text-primary text-yellow-600">{icon}</span>
       <span>{text}</span>
     </li>
