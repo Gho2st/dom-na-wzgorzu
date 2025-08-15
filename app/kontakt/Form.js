@@ -91,8 +91,12 @@ export default function Form() {
         <div className="">
           {formSubmitted ? (
             <div className="mt-10 lg:mt-20 ">
-              <span className="text-2xl ">Dziękujemy za przesłanie formularza kontaktowego.</span>
-              <p className="font-light text-lg mt-6 ">Postaramy się odpowiedzieć jak najszybciej.</p>
+              <span className="text-2xl ">
+                Dziękujemy za przesłanie formularza kontaktowego.
+              </span>
+              <p className="font-light text-lg mt-6 ">
+                Postaramy się odpowiedzieć jak najszybciej.
+              </p>
             </div>
           ) : (
             <form onSubmit={sendMail} className="mt-10">
@@ -184,24 +188,40 @@ export default function Form() {
             </form>
           )}
         </div>
-
         <div className="p-6 py-10 rounded-xl">
-          <div className="">
+          <div>
             <h2 className="text-2xl font-bold text-yellow-600">
               Przywróć energię w sercu uzdrowiskowej natury!
             </h2>
+            <p className="mt-4 text-lg 2xl:text-xl leading-relaxed">
+              Zapraszamy w nasze progi, aby odpocząć, zrelaksować się i poczuć
+              wyjątkowy klimat Muszyny. Czekamy na Ciebie w godzinach:
+            </p>
+            <ul className="mt-4 text-lg  2xl:text-xl">
+              <li>
+                <strong>Poniedziałek – Piątek:</strong> 14:00 – 20:00
+              </li>
+              <li>
+                <strong>Sobota – Niedziela oraz święta:</strong> dla grup po
+                wcześniejszym zamówieniu (minimum 2 dni wcześniej)
+              </li>
+            </ul>
+            <p className="mt-4 text-lg  2xl:text-xl">
+              W tygodniu istnieje również możliwość ustalenia indywidualnych
+              godzin – wystarczy się z nami skontaktować.
+            </p>
             <ul className="flex flex-col gap-8 mt-10">
               <li className="flex gap-2 items-center">
                 <FaPhoneAlt className="text-2xl text-yellow-600" />
-                <Link className="underline text-xl" href={"tel:48573850203"}>
-                  +48 573 850 203{" "}
+                <Link className="underline text-xl" href="tel:48573850203">
+                  +48 573 850 203
                 </Link>
               </li>
-              <li className="flex text-xl  gap-2 items-center">
+              <li className="flex text-xl gap-2 items-center">
                 <IoMail className="text-2xl text-yellow-600" />
                 <Link
                   className="underline"
-                  href={"mailto:domnawzgorzu@m-decor.eu"}
+                  href="mailto:domnawzgorzu@m-decor.eu"
                 >
                   domnawzgorzu@m-decor.eu
                 </Link>

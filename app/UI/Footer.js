@@ -124,8 +124,29 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 text-center">
-          <Link href="/dofinansowanie" className="flex justify-center mb-10 cursor-pointer">
+        <div className="mt-6 text-center">
+          {/* Nowa sekcja godzin otwarcia */}
+          <div className="mt-8 text-base md:text-lg 2xl:text-xl">
+            <h4 className="font-semibold text-yellow-600 mb-2">
+              Godziny otwarcia
+            </h4>
+            <p>
+              Poniedziałek – Piątek:{" "}
+              <span className="font-medium">14:00 – 20:00</span>
+            </p>
+            <p>
+              Sobota – Niedziela, święta: <br />
+              dla grup po wcześniejszym zamówieniu (min. 2 dni wcześniej)
+            </p>
+            <p className="mt-1 italic">
+              W tygodniu istnieje również możliwość ustalenia indywidualnych
+              godzin – wystarczy się z nami skontaktować.
+            </p>
+          </div>
+          <Link
+            href="/dofinansowanie"
+            className="flex justify-center my-10 cursor-pointer"
+          >
             <Image
               src={"/unia.webp"}
               width={120}
